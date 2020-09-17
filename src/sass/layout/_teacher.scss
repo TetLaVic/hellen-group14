@@ -1,0 +1,108 @@
+.teacher-section {
+    padding-bottom: 50px;
+    @include for-size(desktop) {
+        padding-bottom: 137px;
+    }
+}
+
+.teacher-title {
+    @include font(800, 20px, 1.3, 0.03em);
+    @include for-size(tablet) {
+        @include font (800, 26px, 1.307, 0.03em);
+    }
+    @include for-size(desktop) {
+        @include font (800, 46px, 1.304, 0.03em)
+    }
+    margin-bottom: 20px;
+}
+
+.photo {
+    @include for-size(tablet) {
+        width: 243px;
+    }
+
+    @include for-size(desktop) {
+        width: 530px;
+    }
+}
+
+.about-teacher {
+    @include for-size(tablet) {
+        display: flex;
+    }
+}
+
+.teacher-name {
+    @include font(800, 20px, 1.2, 0.03em);
+    @include for-size(desktop) {
+        @include font(800, 30px, 1.233, 0.08em);
+    }
+}
+
+.teacher-experience-list {
+    border-top: 1px solid $secondary-text-color;
+    padding-top: 20px;
+    padding-bottom: 15px;
+
+    .teacher-experience-item {
+        @include font(600, 14px, 1.214, 0.06em);
+        margin-bottom:15px;
+        @include for-size(desktop) {
+        @include font(600, 16px, 1.25, 0.06em);
+        }
+    }
+}
+
+.teacher-experience-text {
+    @include font(500, 12px, 1.666, 0.03em);
+    color: $secondary-text-color;
+    margin-bottom: 15px;
+    @include for-size (desktop) {
+        @include font(500, 18px, 1.555, 0.03em)
+    }
+}
+
+.teacher-link {
+    @include font(500, 12px, 1.666, 0.03em);
+    padding-right: 0;
+    padding-left: 0;
+    color: $accent-text-color;
+    background-color: #ffffff;
+    text-decoration: underline;
+    border: none;
+}
+
+.guarantee-title {
+  @include font(800, 26px, 1.307, 0.03em);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.guarantee {
+    padding-top: 30px;
+    padding-bottom: 31px;
+    background-color: $guarantee-background-color;
+
+    @include for-size(tablet) {
+        width: 688px;
+    }
+
+    @include for-size(desktop) {
+        width: 1314px;
+    }
+}
+
+.guarantee-list {
+    padding-left: 55px;
+    padding-right: 20px;
+
+    @include for-size(tablet) {
+        padding-left: 118px;
+        padding-right: 80px;
+    }
+
+    .guarantee-item {
+        @include font(500, 12px, 1.666, 0.03em);
+        margin-bottom: 16px;
+    }
+}
