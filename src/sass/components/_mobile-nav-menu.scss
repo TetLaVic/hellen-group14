@@ -1,0 +1,35 @@
+.menu-container {
+  @media screen and(max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 60px;
+    background-color: $third-color;
+
+    // opacity: 0;
+    // visibility: hidden;
+    // pointer-events: none;
+
+    // transition: opacity 2500 linear, visibility 2500 linear;
+
+    &.is-open {
+      display: block;
+
+      // opacity: 1;
+      // visibility: visible;
+      // pointer-events: initial;
+    }
+
+    div + div {
+      margin-top: 60px;
+    }
+  }
+
+  @include for-size(tablet) {
+    @include flex(flex, space-between);
+    width: 100%;
+  }
+}

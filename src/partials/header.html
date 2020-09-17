@@ -1,0 +1,121 @@
+<header>
+  <div class="container main">
+    <div class="main-logo">
+      <a href="./index.html" class="phone-logo">
+        <picture>
+          <source
+            srcset="
+              ./images/mobile/phone-logo.png    1x,
+              ./images/mobile/phone-logo@x2.png 2x
+            "
+          />
+          <img src="./images/mobile/phone-logo.png" alt="логотип компании" />
+        </picture>
+      </a>
+      <a href="./index.html" class="basic-logo"
+        >Hell
+        <svg class="icon-logo" width="22" height="30">
+          <use href="./images/svg/sprite.svg#icon-fire"></use>
+        </svg>
+        EN <br />
+        <span class="descript-logo"
+          ><span class="distinguish-logo">адский</span> английский</span
+        >
+      </a>
+    </div>
+
+    <div class="contact-button tablet">
+      <a href="" class="contact-btn">Консультация по телефону</a>
+    </div>
+
+    <button
+      type="button"
+      class="nav-btn-menu"
+      aria-expanded="false"
+      aria-controls="menu-container"
+      data-menu-button
+    >
+      <svg width="20" height="12" aria-label="Переключатель мобильного меню">
+        <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"></use>
+        <use
+          class="icon-cross"
+          href="./images/svg/sprite.svg#icon-close-button"
+        ></use>
+      </svg>
+    </button>
+
+    <div class="menu-container" id="menu-container" data-menu>
+      <div class="navigation">
+        <nav>
+          <ul class="list">
+            <li class="nav-item">
+              <a href="" class="nav-link">Программа обучения</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Варианты обучения</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Контакты</a>
+            </li>
+          </ul>
+          <div class="contact-button">
+            <a href="" class="contact-btn">Консультация по телефону</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/menu.js"></script>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">
+        Комплексная подготовка к ВНО по английскому языку
+      </h1>
+      <p>
+        <span>Просто не будет.</span>Но ты гарантировано наберешь<span
+          >+25 баллов</span
+        >
+      </p>
+      <a href="" class="button">хочу на бесплатное занятие</a>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="container">
+      <h2 class="feature-title">Наши достоинства</h2>
+      <ul class="list">
+        <li class="feature-item">
+          <div class="feature-block-icon">
+            <svg class="feature-icon" width="59" height="60">
+              <use href="./images/svg/sprite.svg#icon-female-student"></use>
+            </svg>
+          </div>
+          <p class="feature-text">Адаптированная авторская программа ВНО</p>
+        </li>
+        <li class="feature-item">
+          <div class="feature-block-icon">
+            <svg class="feature-icon" width="59" height="60">
+              <use href="./images/svg/sprite.svg#icon-mobile-learning"></use>
+            </svg>
+          </div>
+          <p class="feature-text">Современные методики обучения</p>
+        </li>
+        <li class="feature-item">
+          <div class="feature-block-icon">
+            <svg class="feature-icon" width="59" height="60">
+              <use href="./images/svg/sprite.svg#icon-insurance"></use>
+            </svg>
+          </div>
+          <p class="feature-text">Финансовая гарантия результата</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>

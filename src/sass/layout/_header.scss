@@ -1,0 +1,35 @@
+.container.main {
+  position: relative;
+  padding: 30px 0 50px;
+  @include flex(flex, center, space-between);
+
+  // @include for-size(tablet) {
+  //   height: 80px;
+  // }
+}
+
+.menu-container {
+  display: none;
+}
+
+.contact-button.tablet {
+  display: none;
+
+  .contact-btn {
+    @include flex(flex, center, center);
+    @include font(700, 12px, 1.25, 0.08em);
+    text-transform: uppercase;
+    color: $accent-text-color;
+    padding: 17px;
+    border: 2px solid $accent-text-color;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
+    display: block;
+  }
+}
+
+@import '../components/header-logo';
+@import '../components/mobile-menu-bottom';
+@import '../components/header-nav';
+@import '../components/header-cont';

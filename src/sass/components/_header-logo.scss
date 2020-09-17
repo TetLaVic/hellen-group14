@@ -1,0 +1,41 @@
+// .main-logo {
+//   margin-right: 88px;
+
+//   @include for-size(desktop) {
+//     margin-right: 93px;
+//   }
+// }
+
+.phone-logo {
+  @include for-size(tablet) {
+    display: none;
+  }
+}
+
+.basic-logo {
+  display: none;
+
+  @include for-size(tablet) {
+    display: block;
+    // display: inline-flex;
+    // justify-content: center;
+    // width: 100%;
+    @include font(800, 26, 1.23, 0.04em);
+    color: $primary-text-color;
+
+    // @include for-size(desktop) {
+    //   justify-content: start;
+    //   line-height: 1.19;
+    //   font-size: f-s(26);
+    // }
+
+    .descript-logo {
+      @include font(700, 8, 1.25, 0.18em);
+      text-transform: uppercase;
+    }
+
+    .distinguish-logo {
+      color: $accent-text-color;
+    }
+  }
+}

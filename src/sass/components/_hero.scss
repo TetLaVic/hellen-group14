@@ -1,0 +1,80 @@
+// .hero {
+//   @include flex(flex, center);
+//   max-width: 1600px;
+//   height: 400px;
+//   margin-right: auto;
+//   margin-left: auto;
+//   background-color: $first-background-color;
+//   background-image: linear-gradient(
+//       $first-background-color,
+//       $first-background-color
+//     ),
+//     url('../images/mobile/Header.jpg');
+//   background-size: cover;
+
+//   @media screen and (min-device-pixel-ratio: 2),
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx) {
+//     background-image: linear-gradient(
+//         $first-background-color,
+//         $first-background-color
+//       ),
+//       url('../images/mobile/Header@2x.jpg');
+//   }
+
+//   @include for-size(tablet) {
+//     background-image: linear-gradient(
+//         $first-background-color,
+//         $first-background-color
+//       ),
+//       url('../images/tablet/Header.jpg');
+
+//     @media screen and (min-device-pixel-ratio: 2),
+//       screen and (min-resolution: 192dpi),
+//       screen and (min-resolution: 2dppx) {
+//       background-image: linear-gradient(
+//           $first-background-color,
+//           $first-background-color
+//         ),
+//         url('../images/tablet/Header@2x.jpg');
+//     }
+//   }
+
+//   @include for-size(desktop) {
+//     height: 600px;
+//     background-image: linear-gradient(
+//         $first-background-color,
+//         $first-background-color
+//       ),
+//       url('../images/desktop/Header.jpg');
+
+//     @media screen and (min-device-pixel-ratio: 2),
+//       screen and (min-resolution: 192dpi),
+//       screen and (min-resolution: 2dppx) {
+//       background-image: linear-gradient(
+//           $first-background-color,
+//           $first-background-color
+//         ),
+//         url('../images/desktop/Header@2x.jpg');
+//     }
+//   }
+
+//   .container {
+//     @include flex(flex, center);
+//     flex-direction: column;
+//   }
+
+//   &-title {
+//     color: $third-color;
+//     @include font(900, 1.62, 0.06em);
+//     font-size: f-s(26);
+//     text-transform: uppercase;
+//     text-align: center;
+//     margin-bottom: 30px;
+
+//     @include for-size(desktop) {
+//       font-size: f-s(44);
+//       line-height: 1.36;
+//     }
+//   }
+// }
