@@ -524,6 +524,15 @@ img {
   }
 }
 
+.teacher-experience-text:first-of-type::before {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: #ff6b09;
+  margin-bottom: 15px;
+}
+
 .teacher-experience-text {
   font-weight: 500;
   font-size: 12px;
@@ -555,6 +564,15 @@ img {
   border: none;
 }
 
+@media (min-width: 1344px) {
+  .teacher-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.555;
+    letter-spacing: 0.03em;
+  }
+}
+
 .guarantee-title {
   font-weight: 800;
   font-size: 26px;
@@ -565,6 +583,7 @@ img {
 }
 
 .guarantee {
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 31px;
   background-color: #f1f1f1;

@@ -60,6 +60,15 @@
     }
 }
 
+.teacher-experience-text:first-of-type::before {
+    display: block;
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: $accent-text-color;
+    margin-bottom: 15px;
+}
+
 .teacher-experience-text {
     @include font(500, 12px, 1.666, 0.03em);
     color: $secondary-text-color;
@@ -77,6 +86,10 @@
     background-color: #ffffff;
     text-decoration: underline;
     border: none;
+
+    @include for-size(desktop) {
+    @include font(500, 18px, 1.555, 0.03em);
+    }
 }
 
 .guarantee-title {
@@ -86,6 +99,7 @@
 }
 
 .guarantee {
+    width: 100%;
     padding-top: 30px;
     padding-bottom: 31px;
     background-color: $guarantee-background-color;
