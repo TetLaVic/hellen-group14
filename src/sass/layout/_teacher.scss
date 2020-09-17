@@ -1,3 +1,10 @@
+.icon-logo {
+    margin-right: 9px;
+    @include for-size(desktop) {
+    margin-right: 35px;
+    }
+}
+
 .teacher-section {
     padding-bottom: 50px;
     @include for-size(desktop) {
@@ -104,5 +111,9 @@
     .guarantee-item {
         @include font(500, 12px, 1.666, 0.03em);
         margin-bottom: 16px;
+
+        @include for-size(desktop) {
+        @include font(500, 20px, 1.4, 0.03em);
+        }
     }
 }

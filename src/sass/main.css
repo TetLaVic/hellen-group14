@@ -419,6 +419,16 @@ img {
   }
 }
 
+.icon-logo {
+  margin-right: 9px;
+}
+
+@media (min-width: 1344px) {
+  .icon-logo {
+    margin-right: 35px;
+  }
+}
+
 .teacher-section {
   padding-bottom: 50px;
 }
@@ -590,5 +600,14 @@ img {
   line-height: 1.666;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
+}
+
+@media (min-width: 1344px) {
+  .guarantee-list .guarantee-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
