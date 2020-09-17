@@ -468,6 +468,7 @@ img {
 @media (min-width: 768px) {
   .photo {
     width: 243px;
+    margin-right: 30px;
   }
 }
 
@@ -475,6 +476,10 @@ img {
   .photo {
     width: 530px;
   }
+}
+
+.img {
+  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
@@ -508,6 +513,9 @@ img {
 }
 
 .teacher-experience-list .teacher-experience-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.214;
@@ -614,6 +622,9 @@ img {
 }
 
 .guarantee-list .guarantee-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.666;
