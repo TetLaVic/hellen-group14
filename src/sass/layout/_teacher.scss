@@ -119,7 +119,19 @@
     }
 }
 
+.guarantee-list::before {
+    content: '';
+    border-width: 1px;
+    border-color: $secondary-text-color;
+    border-style: dashed;
+    position: absolute;
+    height: 75%;
+    top: 17px;
+    left: 61px;
+}
+
 .guarantee-list {
+    position: relative;
     padding-left: 55px;
     padding-right: 20px;
 
