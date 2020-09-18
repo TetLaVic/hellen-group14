@@ -1,9 +1,15 @@
-.section-dark {
-  position: relative;
+// .main-problems-section {
 
+// }
+
+.section-dark {
   background-color: $primary-text-color;
   padding-top: 50px;
   max-height: 545px;
+
+  background-image: url(../images/svg/background-fire.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
 
   @include for-size(tablet) {
     padding-top: 60px;
@@ -19,8 +25,10 @@
 
 .background-fire {
   position: absolute;
-  bottom: 0%;
-  right: 0%;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  width: 25%;
 }
 
 .title-container {
@@ -57,6 +65,7 @@
 
 .problems-container {
   width: 100%;
+  z-index: 11;
   max-width: 280px;
   padding: 20px 20px 30px;
   outline: 3px dashed tomato;
