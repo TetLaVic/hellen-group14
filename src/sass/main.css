@@ -609,17 +609,6 @@ img {
   }
 }
 
-.guarantee-list::before {
-  content: '';
-  border-width: 1px;
-  border-color: #b9b9b9;
-  border-style: dashed;
-  position: absolute;
-  height: 75%;
-  top: 17px;
-  left: 61px;
-}
-
 .guarantee-list {
   position: relative;
   padding-left: 55px;
@@ -631,6 +620,17 @@ img {
     padding-left: 118px;
     padding-right: 80px;
   }
+}
+
+.guarantee-list .guarantee-item::before {
+  content: '';
+  border-width: 1px;
+  border-color: #b9b9b9;
+  border-style: dashed;
+  position: absolute;
+  height: 75%;
+  top: 17px;
+  left: 61px;
 }
 
 .guarantee-list .guarantee-item {
