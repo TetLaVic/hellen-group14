@@ -167,3 +167,40 @@
     }
   }
 }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+}
+
+.backdrop.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.modal-certificate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  display: flex;
+  width: 200px;
+  height: 300px;
+
+  @include for-size(tablet) {
+    width: 350px;
+    height: 500px;
+  }
+
+  @include for-size(desktop) {
+    width: 600px;
+    height: 800px;
+  }
+}
+
