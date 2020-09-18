@@ -19,52 +19,99 @@
         </svg>
         EN <br />
         <span class="descript-logo"
-          ><span class="distinguish-logo">адский</span> английский</span
+          ><span class="distinguish-logo"> адский </span> английский</span
         >
       </a>
     </div>
 
-    <div class="contact-button tablet">
-      <a href="" class="contact-btn">Консультация по телефону</a>
+    <div class="tablet-position">
+      <div class="contact-button tablet">
+        <a href="" class="contact-btn">Консультация по телефону</a>
+      </div>
+
+      <button
+        type="button"
+        class="nav-btn-menu"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button
+      >
+        <svg width="20" height="12" aria-label="Переключатель мобильного меню">
+          <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"></use>
+          <!-- <use
+            class="icon-cross"
+            href="./images/svg/sprite.svg#icon-close-button"
+          ></use> -->
+        </svg>
+      </button>
     </div>
 
-    <button
-      type="button"
-      class="nav-btn-menu"
-      aria-expanded="false"
-      aria-controls="menu-container"
-      data-menu-button
-    >
-      <svg width="20" height="12" aria-label="Переключатель мобильного меню">
-        <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"></use>
-        <use
-          class="icon-cross"
-          href="./images/svg/sprite.svg#icon-close-button"
-        ></use>
-      </svg>
-    </button>
-
     <div class="menu-container" id="menu-container" data-menu>
-      <div class="navigation">
-        <nav>
-          <ul class="list">
-            <li class="nav-item">
-              <a href="" class="nav-link">Программа обучения</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">О нас</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Варианты обучения</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Контакты</a>
-            </li>
-          </ul>
-          <div class="contact-button">
-            <a href="" class="contact-btn">Консультация по телефону</a>
-          </div>
-        </nav>
+      <div class="header-modal">
+        <a href="./index.html" class="phone-logo">
+          <picture>
+            <source
+              srcset="
+                ./images/mobile/phone-logo-modale.png    1x,
+                ./images/mobile/phone-logo-modale@x2.png 2x
+              "
+            />
+            <img
+              src="./images/mobile/phone-logo-modale.png"
+              alt="логотип компании"
+            />
+          </picture>
+        </a>
+        <a href="./index.html" class="basic-logo modale"
+          >Hell
+          <svg class="icon-logo" width="22" height="30">
+            <use href="./images/svg/sprite.svg#icon-fire"></use>
+          </svg>
+          EN <br />
+          <span class="descript-logo"
+            ><span class="distinguish-logo"> адский </span> английский</span
+          >
+        </a>
+        <button
+          type="button"
+          class="nav-btn-menu"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="20"
+            height="12"
+            aria-label="Переключатель мобильного меню"
+          >
+            <!-- <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"></use> -->
+            <use
+              class="icon-cross"
+              href="./images/svg/sprite.svg#icon-close-button"
+            ></use>
+          </svg>
+        </button>
+      </div>
+
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="" class="nav-link">Программа обучения</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Варианты обучения</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="contact-button">
+        <a href="" class="contact-btn">Консультация по телефону</a>
       </div>
     </div>
   </div>
@@ -84,16 +131,46 @@
         >
       </p>
       <a href="" class="button">хочу на бесплатное занятие</a>
+      <div class="hero-images">
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/Frontend_Developer.jpg    1x,
+              ./images/desktop/Frontend_Developer@2x.jpg 2x
+            "
+            media="(min-width: 1344px)"
+          />
+          <source
+            srcset="
+              ./images/tablet/Frontend_Developer.jpg    1x,
+              ./images/tablet/Frontend_Developer@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/mobile/Frontend_Developer.jpg    1x,
+              ./images/mobile/Frontend_Developer@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="./images/desktop/Frontend_Developer.jpg"
+            alt="фото разработчика"
+            class="team-img"
+          />
+        </picture>
+      </div>
     </div>
   </section>
 
   <section class="feature">
     <div class="container">
       <h2 class="feature-title">Наши достоинства</h2>
-      <ul class="list">
+      <ul class="feature-list">
         <li class="feature-item">
           <div class="feature-block-icon">
-            <svg class="feature-icon" width="59" height="60">
+            <svg class="feature-icon" width="33" height="40">
               <use href="./images/svg/sprite.svg#icon-female-student"></use>
             </svg>
           </div>
@@ -101,7 +178,7 @@
         </li>
         <li class="feature-item">
           <div class="feature-block-icon">
-            <svg class="feature-icon" width="59" height="60">
+            <svg class="feature-icon" width="40" height="41">
               <use href="./images/svg/sprite.svg#icon-mobile-learning"></use>
             </svg>
           </div>
@@ -109,7 +186,7 @@
         </li>
         <li class="feature-item">
           <div class="feature-block-icon">
-            <svg class="feature-icon" width="59" height="60">
+            <svg class="feature-icon" width="35" height="40">
               <use href="./images/svg/sprite.svg#icon-insurance"></use>
             </svg>
           </div>

@@ -1,11 +1,3 @@
-// .main-logo {
-//   margin-right: 88px;
-
-//   @include for-size(desktop) {
-//     margin-right: 93px;
-//   }
-// }
-
 .phone-logo {
   @include for-size(tablet) {
     display: none;
@@ -16,21 +8,19 @@
   display: none;
 
   @include for-size(tablet) {
-    display: block;
-    // display: inline-flex;
-    // justify-content: center;
-    // width: 100%;
-    @include font(800, 26, 1.23, 0.04em);
+    display: flex;
+    flex-wrap: wrap;
+    width: 128px;
+
+    @include font(800, 26px, 1.23, 0.04em);
     color: $primary-text-color;
 
-    // @include for-size(desktop) {
-    //   justify-content: start;
-    //   line-height: 1.19;
-    //   font-size: f-s(26);
-    // }
+    .icon-logo {
+      margin: 0 3px 5px;
+    }
 
     .descript-logo {
-      @include font(700, 8, 1.25, 0.18em);
+      @include font(700, 8px, 1.25, 0.18em);
       text-transform: uppercase;
     }
 
