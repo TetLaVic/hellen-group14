@@ -18,6 +18,7 @@
     @include font(800, 26px, 1.307, 0.03em);
   }
   @include for-size(desktop) {
+    margin-bottom: 50px;
     @include font(800, 46px, 1.304, 0.03em);
   }
   margin-bottom: 20px;
@@ -68,6 +69,7 @@
     margin-bottom: 15px;
     @include for-size(desktop) {
       @include font(600, 16px, 1.25, 0.06em);
+      margin-bottom: 30px;
     }
   }
 }
@@ -87,6 +89,7 @@
   margin-bottom: 15px;
   @include for-size(desktop) {
     @include font(500, 18px, 1.555, 0.03em);
+    margin-bottom: 29px;
   }
 }
 
@@ -120,11 +123,9 @@
   padding-bottom: 31px;
   background-color: $guarantee-background-color;
 
-  @include for-size(tablet) {
-    // width: 688px;
-  }
-
   @include for-size(desktop) {
+    padding-top: 50px;
+    padding-bottom: 45px;
     width: 1314px;
   }
 }
