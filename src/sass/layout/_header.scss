@@ -4,11 +4,11 @@
   @include flex(flex, center, space-between);
 
   @include for-size(tablet) {
-    padding: 40px 20px 70px;
+    padding: 40px 40px 70px;
   }
 
   @include for-size(desktop) {
-    padding: 34px 20px 46px;
+    padding: 34px 20px 125px;
   }
 }
 
@@ -60,6 +60,11 @@
   color: $accent-text-color;
   padding: 17px;
   border: 2px solid $accent-text-color;
+
+  @include for-size(desktop) {
+    @include font(700, 14px, 1.21, 0.14em);
+    padding: 25px 21px;
+  }
 }
 
 .contact-button.tablet {
@@ -74,3 +79,4 @@
 @import '../components/header-logo';
 @import '../components/mobile-menu-bottom';
 @import '../components/mobile-nav-menu';
+@import '../components/hero';
