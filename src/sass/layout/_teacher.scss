@@ -35,7 +35,6 @@
   }
 }
 
-
 .about-teacher {
   @include for-size(tablet) {
     display: flex;
@@ -47,6 +46,15 @@
   @include for-size(desktop) {
     @include font(800, 30px, 1.233, 0.08em);
   }
+}
+
+.teacher-experience {
+    @include for-size(tablet) {
+        width: 401px;
+    }
+    @include for-size(desktop) {
+        width: 641px;
+    }
 }
 
 .teacher-experience-list {
@@ -100,6 +108,10 @@
   @include font(800, 26px, 1.307, 0.03em);
   text-align: center;
   margin-bottom: 30px;
+
+  @include for-size(desktop) {
+    @include font(800, 46px, 1.304, 0.03em);
+  }
 }
 
 .guarantee {
@@ -109,7 +121,7 @@
   background-color: $guarantee-background-color;
 
   @include for-size(tablet) {
-    width: 688px;
+    // width: 688px;
   }
 
   @include for-size(desktop) {
@@ -118,12 +130,17 @@
 }
 
 .guarantee-list {
-  padding-left: 55px;
+  padding-left: 20px;
   padding-right: 20px;
 
   @include for-size(tablet) {
     padding-left: 118px;
-    padding-right: 80px;
+    padding-right: 50px;
+
+    @include for-size(desktop) {
+        padding-right: 54px;
+        padding-left: 112px;
+    }
   }
 
   .guarantee-item:not(:last-child)::before {
@@ -139,7 +156,7 @@
   }
 
   .guarantee-item {
-      position: relative;
+    position: relative;
     display: flex;
     @include font(500, 12px, 1.666, 0.03em);
     margin-bottom: 16px;
