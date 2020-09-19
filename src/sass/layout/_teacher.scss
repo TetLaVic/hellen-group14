@@ -120,8 +120,6 @@
 
 .guarantee {
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 31px;
   background-color: $guarantee-background-color;
 
   @include for-size(desktop) {
@@ -132,6 +130,8 @@
 }
 
 .guarantee-list {
+  padding-top: 30px;
+  padding-bottom: 31px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -155,13 +155,25 @@
     height: 82%;
     top: 23px;
     left: 6px;
+
+    @include for-size(tablet) {
+      height: 72%;
+    }
+
+    @include for-size(desktop) {
+      height: 80%;
+    }
+  }
+
+  .guarantee-item:not(:last-child) {
+    margin-bottom: 16px;
   }
 
   .guarantee-item {
     position: relative;
     display: flex;
     @include font(500, 12px, 1.666, 0.03em);
-    margin-bottom: 16px;
+    // margin-bottom: 16px;
 
     @include for-size(desktop) {
       @include font(500, 20px, 1.4, 0.03em);
@@ -179,15 +191,32 @@
   display: block;
   content: 'При условии посещения 80% занятий и выполнения 100% заданий';
   position: absolute;
-  width: 250px;
+  width: 192px;
   bottom: 14px;
-  left: 5px;
+  right: 0;
+  // left: 5px;
   background-color: rgba(0, 0, 0, 0.8);
   color: $white-text-color;
   z-index: 1000;
   padding: 15px;
-  // opacity: 0;
+  opacity: 0;
   overflow: hidden;
+
+  @include for-size(tablet) {
+    width: 227px;
+    bottom: 14px;
+    left: 5px;
+  }
+
+  @include for-size(desktop) {
+    width: 360px;
+    bottom: 18px;
+    left: 9px;
+  }
+}
+
+.tooltip:hover::after {
+  opacity: 1;
 }
 
 .orange-text {
