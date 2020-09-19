@@ -129,6 +129,7 @@
 
   @include for-size(desktop) {
     width: 1314px;
+    margin: 0 auto;
   }
 }
 
@@ -144,13 +145,14 @@ margin: 0 auto;
     width: 100%;
     padding-left: 79px;
     padding-right: 50px;
+    background-color: $guarantee-background-color;
+  }
 
-    @include for-size(desktop) {
-      padding-right: 54px;
-      padding-left: 112px;
-      padding-top: 50px;
-      padding-bottom: 45px;
-    }
+  @include for-size(desktop) {
+    padding-right: 54px;
+    padding-left: 112px;
+    padding-top: 50px;
+    padding-bottom: 45px;
   }
 
   .guarantee-item:not(:last-child)::before {
