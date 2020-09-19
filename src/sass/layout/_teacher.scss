@@ -28,11 +28,12 @@
   width: 100%;
   @include for-size(tablet) {
     width: 243px;
-    margin-right: 30px;
+    margin-right: 40px;
   }
 
   @include for-size(desktop) {
     width: 530px;
+    margin-right: 31px;
   }
 }
 
@@ -121,6 +122,10 @@
 .guarantee {
   width: 100%;
   background-color: $guarantee-background-color;
+  @include for-size(tablet) {
+  width: 738px;
+  margin: 0 auto;
+  }
 
   @include for-size(desktop) {
     width: 1314px;
@@ -128,13 +133,16 @@
 }
 
 .guarantee-list {
+  width: 320px;
+margin: 0 auto;  
   padding-top: 30px;
   padding-bottom: 31px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   @include for-size(tablet) {
-    padding-left: 118px;
+    width: 100%;
+    padding-left: 79px;
     padding-right: 50px;
 
     @include for-size(desktop) {
@@ -148,13 +156,11 @@
   .guarantee-item:not(:last-child)::before {
     content: '';
     padding-top: 6px;
-    border-width: 1px;
-    border-color: $secondary-text-color;
-    border-style: dashed;
     position: absolute;
     height: 82%;
     top: 23px;
-    left: 6px;
+    left: 7px;
+    border-left: 1px dashed $secondary-text-color;
 
     @include for-size(tablet) {
       height: 72%;
@@ -181,42 +187,37 @@
   }
 }
 
-.tooltip {
+.tooltip-container {
   position: relative;
-  cursor: pointer;
+  display: inline-block;
   color: $accent-text-color;
 }
 
-.tooltip::after {
-  display: block;
-  content: 'При условии посещения 80% занятий и выполнения 100% заданий';
+.tooltip {
+  visibility: hidden;
+  width: 205px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: $guarantee-background-color;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  bottom: 15px;
+ 
   position: absolute;
-  width: 192px;
-  bottom: 14px;
-  right: 0;
-  // left: 5px;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: $white-text-color;
-  z-index: 1000;
-  padding: 15px;
-  opacity: 0;
-  overflow: hidden;
+  z-index: 1;
 
   @include for-size(tablet) {
-    width: 227px;
-    bottom: 14px;
-    left: 5px;
+    width: 220px;
   }
 
   @include for-size(desktop) {
-    width: 360px;
-    bottom: 18px;
-    left: 9px;
+    width: 350px;
   }
 }
 
-.tooltip:hover::after {
-  opacity: 1;
+.tooltip-container:hover .tooltip {
+  visibility: visible;
+  cursor: pointer;
 }
 
 .orange-text {
