@@ -1,0 +1,94 @@
+.container.main {
+  position: relative;
+  padding: 30px 20px 50px;
+  @include flex(flex, center, space-between);
+
+  @include for-size(tablet) {
+    padding: 40px 40px 70px;
+  }
+
+  @include for-size(desktop) {
+    padding: 34px 20px 125px;
+  }
+}
+
+.tablet-position {
+  display: flex;
+  align-items: center;
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: none;
+
+  @include for-size(desktop) {
+    display: flex;
+
+    nav {
+      display: flex;
+    }
+
+    .nav-list {
+      @include flex(flex, center, space-between);
+      margin-right: 60px;
+    }
+
+    .nav-item:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    .nav-link {
+      @include font(700, 14px, 1.21, 0.03em);
+      color: $secondary-text-color;
+      text-transform: uppercase;
+
+      &:hover,
+      &:focus {
+        color: $accent-text-color;
+      }
+    }
+  }
+}
+
+.contact-btn {
+  @include flex(flex, center, center);
+  @include font(700, 12px, 1.25, 0.08em);
+  text-transform: uppercase;
+  color: $accent-text-color;
+  padding: 17px;
+  border: 2px solid $accent-text-color;
+
+  @include for-size(desktop) {
+    @include font(700, 14px, 1.21, 0.14em);
+    padding: 25px 21px;
+  }
+}
+
+.contact-button.tablet {
+  display: none;
+
+  @include for-size(tablet) {
+    display: block;
+    margin-right: 40px;
+  }
+}
+
+.nav-btn-menu {
+  width: 29px;
+  height: 29px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
+@import '../components/header-logo';
+@import '../components/mobile-nav-menu';
+@import '../components/hero';

@@ -1,12 +1,7 @@
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-  // outline: 2px solid tomato;
+  box-sizing: border-box;
 }
 
 body {
@@ -37,6 +32,17 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.list,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .link,
