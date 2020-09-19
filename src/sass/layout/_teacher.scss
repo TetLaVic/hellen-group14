@@ -119,11 +119,13 @@
 }
 
 .guarantee {
-  width: 100%;
-  background-color: $guarantee-background-color;
+  @media screen and (max-width: 767px) {
+    background-color: $guarantee-background-color;
+  }
 
   @include for-size(desktop) {
     width: 1314px;
+    margin: 0 auto;
   }
 }
 
@@ -134,15 +136,16 @@
   padding-right: 20px;
 
   @include for-size(tablet) {
-    padding-left: 118px;
+    padding-left: 88px;
     padding-right: 50px;
+    background-color: $guarantee-background-color;
+  }
 
-    @include for-size(desktop) {
-      padding-right: 54px;
-      padding-left: 112px;
-      padding-top: 50px;
-      padding-bottom: 45px;
-    }
+  @include for-size(desktop) {
+    padding-right: 54px;
+    padding-left: 112px;
+    padding-top: 50px;
+    padding-bottom: 45px;
   }
 
   .guarantee-item:not(:last-child)::before {
