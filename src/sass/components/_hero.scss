@@ -7,6 +7,7 @@
   @include for-size(tablet) {
     padding-bottom: 103px;
     background-image: url('../images/tablet/Hero3White-768.png');
+    background-size: 100% 86%;
   }
 
   @include for-size(desktop) {
@@ -22,7 +23,7 @@
   }
 
   @include for-size(desktop) {
-    padding-left: 20px;
+    padding: 0 15px;
   }
 }
 
@@ -55,7 +56,8 @@
 
   @include for-size(desktop) {
     @include font(700, 20px, 1.65, 0.08em);
-    &:ntx-last-child(-2) {
+
+    .hero-guarantee {
       display: inline-block;
     }
   }
@@ -67,6 +69,10 @@
 
   .hero-bonus {
     color: $accent-text-color;
+
+    @include for-size(desktop) {
+      display: inline-block;
+    }
   }
 }
 

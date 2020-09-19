@@ -1,6 +1,5 @@
 .menu-container {
   @media screen and(max-width: 1343px) {
-    // display: none;
     @include flex(flex, center, flex-start);
     flex-direction: column;
     opacity: 0;
@@ -24,25 +23,30 @@
       visibility: visible;
     }
 
-    .header-modal {
+    .nav-modal {
       @include flex(flex, center, space-between);
       width: 280px;
       margin-bottom: 50px;
 
       @include for-size(tablet) {
         width: 100%;
+        // padding: 0 40px;
         margin-bottom: 72px;
       }
     }
 
     nav {
-      width: 260px;
+      display: inline-block;
       margin-bottom: 50px;
     }
 
     .nav-link {
       @include font(800, 20px, 1.8, 0.03em);
       color: $white-text-color;
+
+      @include for-size(tablet) {
+        @include font(800, 26px, 1.8, 0.03em);
+      }
 
       &:hover,
       &:focus {
@@ -68,9 +72,4 @@
       color: $white-text-color;
     }
   }
-
-  // @include for-size(tablet) {
-  //   @include flex(flex, space-between);
-  //   width: 100%;
-  // }
 }

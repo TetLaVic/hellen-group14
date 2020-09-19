@@ -1,25 +1,13 @@
 .nav-btn-menu {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   margin: 0;
   padding: 0;
   border: none;
-  color: $primary-text-color;
+  // color: $primary-text-color;
   background-color: transparent;
 
   @include for-size(desktop) {
     display: none;
   }
-}
-
-.nav-btn-menu .icon-cross {
-  display: none;
-}
-
-.nav-btn-menu.is-open .icon-cross {
-  display: block;
-}
-
-.nav-btn-menu.is-open .icon-menu {
-  display: none;
 }

@@ -76,7 +76,19 @@
   }
 }
 
+.nav-btn-menu {
+  width: 29px;
+  height: 29px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
 @import '../components/header-logo';
-@import '../components/mobile-menu-bottom';
 @import '../components/mobile-nav-menu';
 @import '../components/hero';

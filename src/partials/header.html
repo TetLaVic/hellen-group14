@@ -26,24 +26,18 @@
 
     <div class="tablet-position">
       <div class="contact-button tablet">
-        <a href="#footer" class="contact-btn">Консультация по телефону</a>
+        <a href="#tel" class="contact-btn">Консультация по телефону</a>
       </div>
 
-      <button
-        type="button"
-        class="nav-btn-menu"
-        aria-expanded="false"
-        aria-controls="menu-container"
-        data-menu-button
-      >
-        <svg width="20" height="12" aria-label="Переключатель мобильного меню">
+      <button type="button" class="nav-btn-menu" data-menu-open>
+        <svg width="22" height="14" aria-label="Переключатель мобильного меню">
           <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"></use>
         </svg>
       </button>
     </div>
 
-    <div class="menu-container" id="menu-container" data-menu>
-      <div class="header-modal">
+    <div class="menu-container is-hidden" id="menu-container" data-menu>
+      <div class="nav-modal">
         <a href="./index.html" class="phone-logo">
           <picture>
             <source
@@ -68,16 +62,10 @@
             ><span class="distinguish-logo"> адский </span> английский</span
           >
         </a>
-        <button
-          type="button"
-          class="nav-btn-menu is-open"
-          aria-expanded="true"
-          aria-controls="menu-container"
-          data-menu-button
-        >
+        <button type="button" class="nav-btn-menu" data-menu-close>
           <svg
-            width="20"
-            height="12"
+            width="17"
+            height="17"
             aria-label="Переключатель мобильного меню"
           >
             <use
@@ -91,13 +79,13 @@
       <nav>
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="#" class="nav-link">Программа обучения</a>
+            <a href="#program" class="nav-link">Программа обучения</a>
           </li>
           <li class="nav-item">
             <a href="#teacher" class="nav-link">О нас</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Варианты обучения</a>
+            <a href="#do-it" class="nav-link">Варианты обучения</a>
           </li>
           <li class="nav-item">
             <a href="#footer" class="nav-link">Контакты</a>
@@ -106,12 +94,10 @@
       </nav>
 
       <div class="contact-button">
-        <a href="#footer" class="contact-btn">Консультация по телефону</a>
+        <a href="#tel" class="contact-btn">Консультация по телефону</a>
       </div>
     </div>
   </div>
-
-  <script src="./js/menu.js"></script>
 </header>
 
 <main>
@@ -123,7 +109,7 @@
         </h1>
         <div class="hero-description">
           <p class="hero-warning">Просто не будет.</p>
-          <p>Но ты гарантировано наберешь</p>
+          <p class="hero-guarantee">Но ты гарантировано наберешь</p>
           <p class="hero-bonus">+25 баллов</p>
         </div>
         <a href="#footer" class="hero-button">хочу на бесплатное занятие</a>
@@ -195,24 +181,24 @@
       <ul class="feature-list">
         <li class="feature-item">
           <div class="feature-block-icon">
-            <svg class="feature-icon" width="33" height="40">
-              <use href="./images/svg/sprite.svg#icon-female-student"></use>
+            <svg class="feature-icon">
+              <use href="./images/svg/sprite.svg#icon-student-border"></use>
             </svg>
           </div>
           <p class="feature-text">Адаптированная авторская программа ВНО</p>
         </li>
         <li class="feature-item">
           <div class="feature-block-icon">
-            <svg class="feature-icon" width="40" height="41">
-              <use href="./images/svg/sprite.svg#icon-mobile-learning"></use>
+            <svg class="feature-icon">
+              <use href="./images/svg/sprite.svg#icon-smartpfone-border"></use>
             </svg>
           </div>
           <p class="feature-text">Современные методики обучения</p>
         </li>
         <li class="feature-item">
           <div class="feature-block-icon">
-            <svg class="feature-icon" width="35" height="40">
-              <use href="./images/svg/sprite.svg#icon-insurance"></use>
+            <svg class="feature-icon">
+              <use href="./images/svg/sprite.svg#icon-dollar-border"></use>
             </svg>
           </div>
           <p class="feature-text">Финансовая гарантия результата</p>
@@ -220,11 +206,6 @@
       </ul>
     </div>
   </section>
-
-  <!-- <use
-                        class="icon-cross"
-                        href="./images/svg/sprite.svg#icon-close-button"
-                      ></use> -->
-
-  <!-- <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"></use> -->
 </main>
+
+<script src="./js/burger-modal.js"></script>
