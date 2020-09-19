@@ -123,8 +123,6 @@
   background-color: $guarantee-background-color;
 
   @include for-size(desktop) {
-    padding-top: 50px;
-    padding-bottom: 45px;
     width: 1314px;
   }
 }
@@ -142,6 +140,8 @@
     @include for-size(desktop) {
       padding-right: 54px;
       padding-left: 112px;
+      padding-top: 50px;
+      padding-bottom: 45px;
     }
   }
 
