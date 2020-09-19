@@ -4,6 +4,7 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+
 @import './utils/vars';
 @import './utils/mixin';
 @import './common/normalize';
@@ -11,3 +12,6 @@
 @import './layout/container';
 @import './layout/header';
 @import './components/feauture';
+@import './components/our-program';
+@import './layout/footer';
+
