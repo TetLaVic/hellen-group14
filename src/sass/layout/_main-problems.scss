@@ -1,31 +1,26 @@
-.section-dark {
+.main-problems-section {
   background-color: $primary-text-color;
   padding-top: 50px;
   max-height: 545px;
+  margin-bottom: 198px;
 
   @include for-size(tablet) {
     padding-top: 60px;
     max-height: 340px;
+    margin-bottom: 202px;
   }
 
   @include for-size(desktop) {
     padding-top: 100px;
     max-height: 560px;
     max-width: 1680px;
+    margin-bottom: 280px;
 
     background-image: url(../images/svg/background-fire.svg);
     background-repeat: no-repeat;
     background-position: right bottom;
   }
 }
-
-// .background-fire {
-//   position: absolute;
-//   // z-index: 1;
-//   bottom: 0;
-//   right: 0;
-//   width: 25%;
-// }
 
 .title-container {
   color: $white-text-color;
