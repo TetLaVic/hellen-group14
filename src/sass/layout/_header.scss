@@ -89,6 +89,10 @@
   }
 }
 
+.icon-menu {
+  fill: $primary-text-color;
+}
+
 @import '../components/header-logo';
 @import '../components/mobile-nav-menu';
 @import '../components/hero';

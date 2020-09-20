@@ -1,37 +1,46 @@
 .main-program-section {
-  // overflow: hidden;
+  position: relative;
   background-color: $primary-text-color;
   margin-bottom: 270px;
   padding-bottom: 437px;
   padding-right: 0px;
 
   @include for-size(tablet) {
+    padding-bottom: 172px;
     margin-bottom: 302px;
   }
 
   @include for-size(desktop) {
+    height: 1235px;
+    padding-bottom: 65px;
     margin-bottom: 329px;
   }
-  // max-height: 1436px;
 }
+
 .program-section.container {
   @media screen and (max-width: 767px) {
     padding-right: 0;
+    padding-left: 0;
+  }
+
+  @include for-size(tablet) {
+    padding-right: 0;
+  }
+
+  @include for-size(desktop) {
+    padding-left: 0;
   }
 }
 
 .program-section {
   position: relative;
-  max-width: 1680px;
-
   width: 100%;
   padding-top: 50px;
 
-  @include for-size(tablet) {
-    padding-left: 40px;
+  @include for-size(desktop) {
+    width: 1344px;
+    padding-top: 120px;
   }
-  // padding-bottom: 385px;
-  // background: $primary-text-color;
 }
 
 .program-container-flex {
@@ -40,8 +49,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  // padding-bottom: 173px;
 }
 
 .picture {
@@ -57,40 +64,36 @@
   @media screen and (min-width: 768px) {
     width: 384px;
     height: 280px;
-    bottom: 285px;
+    bottom: 100px;
     right: 0px;
   }
   @media screen and (min-width: 1344px) {
     width: 760px;
     height: 502px;
-    bottom: 300px;
-    left: -110px;
+    bottom: -40px;
+    left: -195px;
   }
 }
-//}
 
 .program-title {
-  margin-top: 0;
-  margin-bottom: 50px;
+  padding-left: 40px;
+  margin-bottom: 45px;
   text-align: center;
   color: $white-text-color;
-  @include font(900, 20px, 1.3, 0.03em);
+  @include font(800, 20px, 1.3, 0.03em);
 
   @media screen and (min-width: 768px) {
-    margin-top: 0;
     text-align: left;
     @include font(900, 26px, 1.3, 0.03em);
   }
   @media screen and (min-width: 1344px) {
-    margin-top: 0;
+    margin-bottom: 100px;
     @include font(900, 46px, 1.3, 0.03em);
   }
 }
 .course {
   position: relative;
   margin: 0 auto;
-  //display: flex;
-  //flex-wrap: wrap;
   background-color: $primary-text-color;
 
   @media screen and (max-width: 767px) {
@@ -144,6 +147,7 @@
   }
   @media screen and (min-width: 1344px) {
     @include font(400, 30px, 0.93, 0.08em);
+    margin-bottom: 25px;
   }
 }
 .unit {
@@ -248,7 +252,12 @@
     margin-bottom: 0;
     margin-right: 83px;
   }
+
+  @include for-size(desktop) {
+    margin-bottom: 25px;
+  }
 }
+
 .unit-item {
   @include font(400, 12px, 1.67, 0.08em);
   color: $secondary-text-color;
@@ -261,30 +270,31 @@
 .item-item {
   display: block;
 }
-.hide {
+.item-item-h {
   color: transparent;
 }
 
 .program-feature-container {
   position: absolute;
   z-index: 11;
-  max-width: 280px;
+  min-width: 280px;
   padding: 20px 20px 30px;
-  // outline: 3px dashed tomato;
-  // transform: translate(-50%, -50%);
-  left: 20px;
+  transform: translate(-50%);
+  left: 50%;
   bottom: -695px;
 
   @include for-size(tablet) {
-    padding: 30px 96px 20px;
+    padding: 30px 98px 20px;
+    width: calc(100% - (40px * 2));
+    bottom: -435px;
     max-width: 688px;
-    top: 1500px;
+    // top: 1500px;
   }
 
   @include for-size(desktop) {
     padding: 70px 112px 62px;
     max-width: 1314px;
-    top: 1350px;
+    bottom: -280px;
   }
 
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
@@ -294,26 +304,19 @@
 }
 
 .program-feature-title {
-  max-width: 50%;
-  // margin-bottom: 30px;
-  // bottom: 400px;
-  // // top: 85%;
-  // display: block;
-
   color: $white-text-color;
-  z-index: 11;
-
   @include font(800, 20px, 1.36, 00.03em);
+
+  @media screen and (max-width: 767px) {
+    max-width: 50%;
+    margin-left: 20px;
+  }
 
   @include for-size(tablet) {
     width: 100%;
     font-size: 26px;
     line-height: 1.3;
-
     text-align: center;
-    // bottom: 270px;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
   }
 
   @include for-size(desktop) {
