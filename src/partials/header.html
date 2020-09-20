@@ -1,0 +1,216 @@
+<header>
+  <div class="container main">
+    <div class="main-logo">
+      <a href="./index.html" class="phone-logo">
+        <picture>
+          <source
+            srcset="
+              ./images/mobile/phone-logo.png    1x,
+              ./images/mobile/phone-logo@x2.png 2x
+            "
+          />
+          <img src="./images/mobile/phone-logo.png" alt="логотип компании" />
+        </picture>
+      </a>
+      <a href="./index.html" class="basic-logo"
+        >Hell
+        <svg class="icon-logo" width="22" height="30">
+          <use href="./images/svg/sprite.svg#icon-fire"></use>
+        </svg>
+        EN <br />
+        <span class="descript-logo"
+          ><span class="distinguish-logo"> адский </span> английский</span
+        >
+      </a>
+    </div>
+
+    <div class="tablet-position">
+      <div class="contact-button tablet">
+        <a href="#tel" class="contact-btn">Консультация по телефону</a>
+      </div>
+
+      <button type="button" class="nav-btn-menu" data-menu-open>
+        <svg
+          class="icon-menu-open"
+          width="22"
+          height="14"
+          aria-label="Переключатель мобильного меню"
+        >
+          <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="menu-container is-hidden" id="menu-container" data-menu>
+      <div class="nav-modal">
+        <a href="./index.html" class="phone-logo">
+          <picture>
+            <source
+              srcset="
+                ./images/mobile/phone-logo-modale.png    1x,
+                ./images/mobile/phone-logo-modale@x2.png 2x
+              "
+            />
+            <img
+              src="./images/mobile/phone-logo-modale.png"
+              alt="логотип компании"
+            />
+          </picture>
+        </a>
+        <a href="./index.html" class="basic-logo modale"
+          >Hell
+          <svg class="icon-logo" width="22" height="30">
+            <use href="./images/svg/sprite.svg#icon-fire"></use>
+          </svg>
+          EN <br />
+          <span class="descript-logo"
+            ><span class="distinguish-logo"> адский </span> английский</span
+          >
+        </a>
+        <button type="button" class="nav-btn-menu" data-menu-close>
+          <svg
+            width="17"
+            height="17"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./images/svg/sprite.svg#icon-close-button"
+            ></use>
+          </svg>
+        </button>
+      </div>
+
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#program" class="nav-link">Программа обучения</a>
+          </li>
+          <li class="nav-item">
+            <a href="#teacher" class="nav-link">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a href="#do-it" class="nav-link">Варианты обучения</a>
+          </li>
+          <li class="nav-item">
+            <a href="#footer" class="nav-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="contact-button">
+        <a href="#tel" class="contact-btn">Консультация по телефону</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-main">
+        <h1 class="hero-title">
+          Комплексная подготовка к ВНО по английскому языку
+        </h1>
+        <div class="hero-description">
+          <p class="hero-warning">Просто не будет.</p>
+          <p class="hero-guarantee">Но ты гарантировано наберешь</p>
+          <p class="hero-bonus">+25 баллов</p>
+        </div>
+        <a href="#footer" class="hero-button">хочу на бесплатное занятие</a>
+      </div>
+      <div class="hero-images">
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/Hero2Shadow-1200.png    1x,
+              ./images/desktop/Hero2Shawod-1200@2x.png 2x
+            "
+            media="(min-width: 1344px)"
+          />
+          <source
+            srcset="
+              ./images/tablet/Hero2Shadow-768.png    1x,
+              ./images/tablet/Hero2Shadow-768@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/mobile/Hero2Shadow-320.png    1x,
+              ./images/mobile/Hero2Shadow-320@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="./images/desktop/Hero2Shadow-1200.png"
+            alt="процесс обучения"
+            class="hero-img-shadow"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/Hero1-1200.png    1x,
+              ./images/desktop/Hero1-1200@2x.png 2x
+            "
+            media="(min-width: 1344px)"
+          />
+          <source
+            srcset="
+              ./images/tablet/Hero1-768.png    1x,
+              ./images/tablet/Hero1-768@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/mobile/Hero1-320.png    1x,
+              ./images/mobile/Hero1-320@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="./images/desktop/Hero1-1200.png"
+            alt="процесс обучения"
+            class="hero-img-front"
+          />
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="container">
+      <h2 class="feature-title">Наши достоинства</h2>
+      <ul class="feature-list">
+        <li class="feature-item">
+          <div class="feature-block-icon">
+            <svg class="feature-icon">
+              <use href="./images/svg/sprite.svg#icon-student-border"></use>
+            </svg>
+          </div>
+          <p class="feature-text">Адаптированная авторская программа ВНО</p>
+        </li>
+        <li class="feature-item">
+          <div class="feature-block-icon">
+            <svg class="feature-icon">
+              <use href="./images/svg/sprite.svg#icon-smartpfone-border"></use>
+            </svg>
+          </div>
+          <p class="feature-text">Современные методики обучения</p>
+        </li>
+        <li class="feature-item">
+          <div class="feature-block-icon">
+            <svg class="feature-icon">
+              <use href="./images/svg/sprite.svg#icon-dollar-border"></use>
+            </svg>
+          </div>
+          <p class="feature-text">Финансовая гарантия результата</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<script src="./js/burger-modal.js"></script>

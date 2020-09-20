@@ -1,0 +1,263 @@
+.icon-teacher {
+  margin-right: 9px;
+  @include for-size(desktop) {
+    margin-right: 35px;
+  }
+}
+
+.teacher-section {
+  padding-bottom: 50px;
+  @include for-size(desktop) {
+    padding-bottom: 137px;
+  }
+}
+
+.teacher-title {
+  @include font(800, 20px, 1.3, 0.03em);
+  @include for-size(tablet) {
+    @include font(800, 26px, 1.307, 0.03em);
+  }
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+    @include font(800, 46px, 1.304, 0.03em);
+  }
+  margin-bottom: 20px;
+}
+
+.photo {
+  width: 100%;
+  @include for-size(tablet) {
+    width: 243px;
+    margin-right: 40px;
+  }
+
+  @include for-size(desktop) {
+    width: 530px;
+    margin-right: 31px;
+  }
+}
+
+.about-teacher {
+  @include for-size(tablet) {
+    display: flex;
+  }
+}
+
+.teacher-name {
+  @include font(800, 20px, 1.2, 0.03em);
+  @include for-size(desktop) {
+    @include font(800, 30px, 1.233, 0.08em);
+  }
+}
+
+.teacher-experience {
+  @include for-size(tablet) {
+    width: 401px;
+  }
+  @include for-size(desktop) {
+    width: 641px;
+  }
+}
+
+.teacher-experience-list {
+  border-top: 1px solid $secondary-text-color;
+  padding-top: 20px;
+  padding-bottom: 15px;
+
+  .teacher-experience-item {
+    display: flex;
+    @include font(600, 14px, 1.214, 0.06em);
+    margin-bottom: 15px;
+    @include for-size(desktop) {
+      @include font(600, 16px, 1.25, 0.06em);
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.teacher-experience-text:first-of-type::before {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: $accent-text-color;
+  margin-bottom: 15px;
+}
+
+.teacher-experience-text {
+  @include font(500, 12px, 1.666, 0.03em);
+  color: $secondary-text-color;
+  margin-bottom: 15px;
+  @include for-size(desktop) {
+    @include font(500, 18px, 1.555, 0.03em);
+    margin-bottom: 29px;
+  }
+}
+
+.teacher-link {
+  @include font(500, 12px, 1.666, 0.03em);
+  padding-right: 0;
+  padding-left: 0;
+  color: $accent-text-color;
+  background-color: #ffffff;
+  text-decoration: underline;
+  border: none;
+  cursor: pointer;
+
+  @include for-size(desktop) {
+    @include font(500, 18px, 1.555, 0.03em);
+  }
+}
+
+.guarantee-title {
+  @include font(800, 26px, 1.307, 0.03em);
+  text-align: center;
+  margin-bottom: 30px;
+
+  @include for-size(desktop) {
+    @include font(800, 46px, 1.304, 0.03em);
+  }
+}
+
+.guarantee {
+  width: 100%;
+  background-color: $guarantee-background-color;
+  @include for-size(tablet) {
+  width: 738px;
+  margin: 0 auto;
+  }
+
+  @include for-size(desktop) {
+    width: 1314px;
+    margin: 0 auto;
+  }
+}
+
+.guarantee-list {
+  width: 320px;
+margin: 0 auto;  
+  padding-top: 30px;
+  padding-bottom: 31px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include for-size(tablet) {
+    width: 100%;
+    padding-left: 79px;
+    padding-right: 50px;
+    background-color: $guarantee-background-color;
+  }
+
+  @include for-size(desktop) {
+    padding-right: 54px;
+    padding-left: 112px;
+    padding-top: 50px;
+    padding-bottom: 45px;
+  }
+
+  .guarantee-item:not(:last-child)::before {
+    content: '';
+    padding-top: 6px;
+    position: absolute;
+    height: 82%;
+    top: 23px;
+    left: 7px;
+    border-left: 1px dashed $secondary-text-color;
+
+    @include for-size(tablet) {
+      height: 72%;
+    }
+
+    @include for-size(desktop) {
+      height: 80%;
+    }
+  }
+
+  .guarantee-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .guarantee-item {
+    position: relative;
+    display: flex;
+    @include font(500, 12px, 1.666, 0.03em);
+    // margin-bottom: 16px;
+
+    @include for-size(desktop) {
+      @include font(500, 20px, 1.4, 0.03em);
+    }
+  }
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  color: $accent-text-color;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 205px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: $guarantee-background-color;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  bottom: 15px;
+ 
+  position: absolute;
+  z-index: 1;
+
+  @include for-size(tablet) {
+    width: 220px;
+  }
+
+  @include for-size(desktop) {
+    width: 350px;
+  }
+}
+
+.tooltip-container:hover .tooltip {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.orange-text {
+  color: $accent-text-color;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+}
+
+.backdrop.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.modal-certificate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  display: flex;
+  width: 200px;
+  height: 300px;
+
+  @include for-size(tablet) {
+    width: 350px;
+    height: 500px;
+  }
+
+  @include for-size(desktop) {
+    width: 600px;
+    height: 800px;
+  }
+}
