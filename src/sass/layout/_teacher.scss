@@ -131,6 +131,14 @@
     width: 1314px;
     margin: 0 auto;
   }
+
+  & .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include for-size(tablet) {
+  }
 }
 
 .guarantee-list {
@@ -145,7 +153,7 @@
     width: 100%;
     padding-left: 79px;
     padding-right: 50px;
-    background-color: $guarantee-background-color;
+    // background-color: $guarantee-background-color;
   }
 
   @include for-size(desktop) {
