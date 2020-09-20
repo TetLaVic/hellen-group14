@@ -12,6 +12,12 @@
   }
 }
 
+.data-menu-link {
+  @include for-size(desktop) {
+    @include flex(flex, center, space-between);
+  }
+}
+
 .tablet-position {
   display: flex;
   align-items: center;

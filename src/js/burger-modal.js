@@ -9,8 +9,17 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    // document.body.classList.toggle('modal-open');
     refs.modal.classList.toggle('is-hidden');
     refs.modal.classList.toggle('is-open');
   }
+})();
+
+(() => {
+  const menuNavLink = document.querySelector('[data-menu-link]');
+  const menuBtnRef = document.querySelector('[data-menu-close]');
+  const mobileMenuRef = document.querySelector('[data-menu]');
+  menuNavLink.addEventListener('click', () => {
+    mobileMenuRef.classList.toggle('is-open');
+    menuBtnRef.classList.toggle('is-open');
+  });
 })();
