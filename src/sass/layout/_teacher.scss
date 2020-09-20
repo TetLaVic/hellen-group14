@@ -123,8 +123,8 @@
   width: 100%;
   background-color: $guarantee-background-color;
   @include for-size(tablet) {
-  width: 738px;
-  margin: 0 auto;
+    width: 738px;
+    margin: 0 auto;
   }
 
   @include for-size(desktop) {
@@ -135,7 +135,7 @@
 
 .guarantee-list {
   width: 320px;
-margin: 0 auto;  
+  margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 31px;
   padding-left: 15px;
@@ -204,7 +204,7 @@ margin: 0 auto;
   padding: 10px;
   border-radius: 6px;
   bottom: 15px;
- 
+
   position: absolute;
   z-index: 1;
 
