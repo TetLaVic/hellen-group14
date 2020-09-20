@@ -12,7 +12,7 @@
 
   @include for-size(desktop) {
     height: 1235px;
-    padding-bottom: 65px;
+    // padding-bottom: 65px;
     margin-bottom: 329px;
   }
 }
@@ -67,11 +67,21 @@
     bottom: 100px;
     right: 0px;
   }
-  @media screen and (min-width: 1344px) {
-    width: 760px;
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
+.picture-desktop {
+  display: none;
+
+  @include for-size(desktop) {
+    position: absolute;
+    display: block;
+    width: 672px;
     height: 502px;
-    bottom: -40px;
-    left: -195px;
+    bottom: 59px;
   }
 }
 
@@ -282,6 +292,7 @@
   transform: translate(-50%);
   left: 50%;
   bottom: -695px;
+  box-shadow: -5px 8px 26px $box-shadow;
 
   @include for-size(tablet) {
     padding: 30px 98px 20px;
@@ -297,7 +308,6 @@
     bottom: -280px;
   }
 
-  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   background-color: $white-text-color;
 
   counter-reset: li;
