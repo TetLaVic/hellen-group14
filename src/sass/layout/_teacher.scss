@@ -236,7 +236,7 @@
   color: $accent-text-color;
 }
 
-.backdrop {
+.teacher-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -246,7 +246,7 @@
   z-index: 99999;
 }
 
-.backdrop.is-hidden {
+.teacher-backdrop.is-hidden {
   pointer-events: none;
   opacity: 0;
 }
