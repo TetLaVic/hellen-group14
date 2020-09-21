@@ -975,7 +975,7 @@ a {
   .main-problems-section {
     padding-top: 100px;
     max-height: 560px;
-    max-width: 1680px;
+    max-width: 100%;
     margin-bottom: 280px;
     background-image: url(/background-fire.22be03a0.svg);
     background-repeat: no-repeat;
