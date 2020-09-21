@@ -1,5 +1,7 @@
 .icon-teacher {
   margin-right: 9px;
+  fill: $accent-text-color;
+
   @include for-size(desktop) {
     margin-right: 35px;
   }
