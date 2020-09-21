@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./..\\images\\mobile\\Hero3White-320.png":[["Hero3White-320.83d9315f.png","qbEl"],"qbEl"],"./..\\images\\tablet\\Hero3White-768.png":[["Hero3White-768.accd0370.png","GZHF"],"GZHF"],"./..\\images\\desktop\\Hero3White-1200.png":[["Hero3White-1200.25f1e076.png","NBca"],"NBca"],"./..\\images\\svg\\background-fire.svg":[["background-fire.330f315f.svg","dXM4"],"dXM4"],"./..\\images\\mobile\\footer-mob.png":[["footer-mob.dd2dbbc3.png","wsTm"],"wsTm"],"./..\\images\\tablet\\footer-tab.png":[["footer-tab.916336aa.png","jTb5"],"jTb5"],"./..\\images\\desktop\\footer-desctop.png":[["footer-desctop.39057343.png","WXo8"],"WXo8"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/hellen-group14/src.888a59f0.js.map
+//# sourceMappingURL=/src.90b37f61.js.map
