@@ -1223,6 +1223,10 @@ a {
   }
 }
 
+.do-it-tittle-size {
+  max-width: 360px;
+}
+
 .do-it-line {
   color: #ff6b09;
   text-align: center;
@@ -1744,6 +1748,7 @@ a {
 
 .icon-teacher {
   margin-right: 9px;
+  fill: #ff6b09;
 }
 @media (min-width: 1344px) {
   .icon-teacher {
