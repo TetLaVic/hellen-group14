@@ -1223,6 +1223,10 @@ a {
   }
 }
 
+.do-it-tittle-size {
+  max-width: 360px;
+}
+
 .do-it-line {
   color: #ff6b09;
   text-align: center;
@@ -2043,7 +2047,7 @@ a {
   color: #ff6b09;
 }
 
-.backdrop {
+.teacher-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -2053,7 +2057,7 @@ a {
   z-index: 99999;
 }
 
-.backdrop.is-hidden {
+.teacher-backdrop.is-hidden {
   pointer-events: none;
   opacity: 0;
 }

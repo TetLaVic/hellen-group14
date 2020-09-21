@@ -117,30 +117,19 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/burger-modal.js":[function(require,module,exports) {
+})({"js/modal.js":[function(require,module,exports) {
 (function () {
   var refs = {
-    openModalBtn: document.querySelector('[data-menu-open]'),
-    closeModalBtn: document.querySelector('[data-menu-close]'),
-    modal: document.querySelector('[data-menu]')
+    openModalBtn: document.querySelector('[data-modal-open]'),
+    closeModalBtn: document.querySelector('[data-modal-close]'),
+    modal: document.querySelector('[data-modal]')
   };
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
-    refs.modal.classList.toggle('is-open');
   }
-})();
-
-(function () {
-  var menuNavLink = document.querySelector('[data-menu-link]');
-  var menuBtnRef = document.querySelector('[data-menu-close]');
-  var mobileMenuRef = document.querySelector('[data-menu]');
-  menuNavLink.addEventListener('click', function () {
-    mobileMenuRef.classList.toggle('is-open');
-    menuBtnRef.classList.toggle('is-open');
-  });
 })();
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -170,7 +159,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54260" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50350" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -346,5 +335,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/burger-modal.js"], null)
-//# sourceMappingURL=/burger-modal.235cd653.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/modal.js"], null)
+//# sourceMappingURL=/modal.4331011c.js.map
