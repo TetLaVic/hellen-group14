@@ -979,7 +979,7 @@ a {
     margin-bottom: 280px;
     background-image: url(/background-fire.22be03a0.svg);
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: right bottom -10px;
   }
 }
 
@@ -1329,11 +1329,10 @@ a {
   position: absolute;
   opacity: 0.5;
   z-index: 1;
-  width: 176px;
   height: 137px;
   margin: 0;
   bottom: 0px;
-  right: -56px;
+  right: 0px;
 }
 @media screen and (min-width: 768px) {
   .picture {
@@ -1355,6 +1354,7 @@ a {
 @media (min-width: 1344px) {
   .picture-desktop {
     position: absolute;
+    opacity: 0.5;
     display: block;
     width: 672px;
     height: 502px;
