@@ -22,33 +22,16 @@
       </div>
       <div class="program-container-flex">
         <div class="picture">
-          <picture>
-            <source
-              srcset="
-                ./images/desktop/Program1200.jpg    1x,
-                ./images/desktop/Program1200@2x.jpg 2x
-              "
-              media="(min-width: 1344px)"
-            />
-            <source
-              srcset="
-                ./images/tablet/Program768.jpg    1x,
-                ./images/tablet/Program768@2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./images/mobile/Program320.jpg    1x,
-                ./images/mobile/Program320@2x.jpg 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img
-              src="./images/desktop/Program1200.jpg"
-              alt="Program education"
-            />
-          </picture>
+          <img
+            src="./images/mobile/program320.jpg"
+            srcset="
+              ./images/mobile/program320.jpg    300w,
+              ./images/tablet/program768.jpg    600w,
+              ./images/desktop/program1200.jpg 1200w
+            "
+            sizes="(min-width: 601px) 300px, (min-width: 901px) 600px, 100vw"
+            alt="Program education"
+          />
         </div>
         <h2 class="program-title">Наша программа</h2>
         <ul class="program-list">
@@ -197,29 +180,15 @@
     </div>
   </div>
   <div class="picture-desktop">
-    <picture>
-      <source
-        srcset="
-          ./images/desktop/Program1200.jpg    1x,
-          ./images/desktop/Program1200@2x.jpg 2x
-        "
-        media="(min-width: 1344px)"
-      />
-      <source
-        srcset="
-          ./images/tablet/Program768.jpg    1x,
-          ./images/tablet/Program768@2x.jpg 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="
-          ./images/mobile/Program320.jpg    1x,
-          ./images/mobile/Program320@2x.jpg 2x
-        "
-        media="(max-width: 767px)"
-      />
-      <img src="./images/desktop/Program1200.jpg" alt="Program education" />
-    </picture>
+    <img
+      src="./images/mobile/program320.jpg"
+      srcset="
+        ./images/mobile/program320.jpg    300w,
+        ./images/tablet/program768.jpg    600w,
+        ./images/desktop/program1200.jpg 1200w
+      "
+      sizes="(min-width: 601px) 300px, (min-width: 901px) 600px, 100vw"
+      alt="Program education"
+    />
   </div>
 </section>
